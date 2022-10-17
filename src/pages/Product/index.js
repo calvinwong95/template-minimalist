@@ -14,37 +14,28 @@ const Product = () => {
   const { isMobile } = useContext(PageStateContext);
   const listArrayOne = [
     {
-      name: "Sausage Platter",
-      price: 20,
-      description: "Cajun Sausages with avocado dip",
+      name: "Fried Pork Wonton",
+      price: 10,
+      description: "Crispy wonton with minced pork",
     },
     {
-      name: "Sausage Platter",
+      name: "Fried Green Tomatillos",
       price: 20,
-      description: "Cajun Sausages with avocado dip",
+      description: "Tomato, capers, olives, feta cheese",
     },
     {
-      name: "Sausage Platter",
-      price: 20,
-      description: "Cajun Sausages with avocado dip",
+      name: "Bacon wrapped jalapenos",
+      price: 15,
+      description: "Crispy bacon with jalapenos, cream cheese sauce",
     },
     {
-      name: "Sausage Platter",
+      name: "Shrimp Ceviche",
       price: 20,
-      description: "Cajun Sausages with avocado dip",
+      description:
+        "bell pepper, onion, tomato, garlic, chives, coriander, shrimp",
     },
     {
-      name: "Sausage Platter",
-      price: 20,
-      description: "Cajun Sausages with avocado dip",
-    },
-    {
-      name: "Sausage Platter",
-      price: 20,
-      description: "Cajun Sausages with avocado dip",
-    },
-    {
-      name: "Sausage Platter",
+      name: "Fried Coconut Shrimp",
       price: 20,
       description: "Cajun Sausages with avocado dip",
     },
@@ -56,39 +47,40 @@ const Product = () => {
   ];
   const listArrayTwo = [
     {
-      name: "Steak Tartare",
-      price: 40,
-      description: "Raw beef, capers, mustard, honey, salt and pepper",
+      name: "Mushroom Brocolli Alfredo",
+      price: 30,
+      description:
+        "Shittake mushroom, brocolli, carrots, onions, pasta, cream, nuts",
     },
     {
-      name: "Steak Tartare",
-      price: 40,
-      description: "Raw beef, capers, mustard, honey, salt and pepper",
+      name: "Chicken Pot Pie",
+      price: 25,
+      description: "Chicken, carrots, onions, celery, puff pastry",
     },
     {
-      name: "Steak Tartare",
-      price: 40,
-      description: "Raw beef, capers, mustard, honey, salt and pepper",
+      name: "Baked ravioli",
+      price: 35,
+      description: "Tomato, parmesan, truffle oil, pasta, egg yolk",
     },
     {
-      name: "Steak Tartare",
+      name: "Pork Ribs",
       price: 40,
-      description: "Raw beef, capers, mustard, honey, salt and pepper",
+      description: "All spice, mash potato, carrots, onions, sauce",
     },
     {
-      name: "Steak Tartare",
-      price: 40,
-      description: "Raw beef, capers, mustard, honey, salt and pepper",
+      name: "Shrimp pesto pasta",
+      price: 42,
+      description: "Tiger prawns, pinenuts, pesto, basil, garlic, onion",
     },
     {
-      name: "Steak Tartare",
-      price: 40,
-      description: "Raw beef, capers, mustard, honey, salt and pepper",
+      name: "Salmon with Dijon sauce",
+      price: 38,
+      description: "Salmon, mustard, tarragon, olive oil",
     },
     {
-      name: "Steak Tartare",
-      price: 40,
-      description: "Raw beef, capers, mustard, honey, salt and pepper",
+      name: "Peppercorn Steak",
+      price: 60,
+      description: "Angus steak, peppercorn sauce, seasoned mash potatoes",
     },
     {
       name: "Steak Tartare",
@@ -98,39 +90,39 @@ const Product = () => {
   ];
   const listArrayThree = [
     {
-      name: "Sweet and Sour Mojito",
+      name: "Sparkling Strawberry Lemonade",
       price: 20,
-      description: "Mint, Lime, Honey, Rum, Sprite",
+      description: "Lemon, strawberry, soda",
     },
     {
-      name: "Sweet and Sour Mojito",
+      name: "Strawberry Jalapeno margarita",
       price: 20,
-      description: "Mint, Lime, Honey, Rum, Sprite",
+      description: "strawberry, jalapeno, rum",
     },
     {
-      name: "Sweet and Sour Mojito",
-      price: 20,
-      description: "Mint, Lime, Honey, Rum, Sprite",
+      name: "Spicy bloody mary cocktail",
+      price: 29,
+      description: "Olive, tomato, chilly, vodka",
     },
     {
-      name: "Sweet and Sour Mojito",
+      name: "Champagne margarita",
       price: 20,
-      description: "Mint, Lime, Honey, Rum, Sprite",
+      description: "Champagne with salt",
     },
     {
-      name: "Sweet and Sour Mojito",
+      name: "Pumpkin pie martini",
       price: 20,
-      description: "Mint, Lime, Honey, Rum, Sprite",
+      description: "pumpkin, all spice, martini",
     },
     {
-      name: "Sweet and Sour Mojito",
+      name: "Watermelon margarita",
       price: 20,
-      description: "Mint, Lime, Honey, Rum, Sprite",
+      description: "Watermelon, Rum, Sprite",
     },
     {
-      name: "Sweet and Sour Mojito",
+      name: "Apple Pie Cocktail",
       price: 20,
-      description: "Mint, Lime, Honey, Rum, Sprite",
+      description: "Apple, pie, cinnamon",
     },
     {
       name: "Sweet and Sour Mojito",
@@ -140,9 +132,9 @@ const Product = () => {
   ];
   const listArrayFour = [
     {
-      name: "Panna Cotta",
+      name: "Salted chocolate brownie",
       price: 20,
-      description: "Coconut, Milk, Cream, Passion Fruit",
+      description: "Sea salt, chocolate, peanuts",
     },
     {
       name: "Panna Cotta",
@@ -150,14 +142,14 @@ const Product = () => {
       description: "Coconut, Milk, Cream, Passion Fruit",
     },
     {
-      name: "Panna Cotta",
+      name: "Cheesecake",
       price: 20,
-      description: "Coconut, Milk, Cream, Passion Fruit",
+      description: "Lemon zest, cream cheese, biscuits",
     },
     {
-      name: "Panna Cotta",
+      name: "Banana split",
       price: 20,
-      description: "Coconut, Milk, Cream, Passion Fruit",
+      description: "Banana, ice cream, chocolate sauce",
     },
   ];
   return (

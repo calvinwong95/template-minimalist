@@ -17,7 +17,7 @@ export const SidebarData = [
     cName: "nav-text",
   },
   {
-    title: "LOCATION",
+    title: "LOCATION AND HOURS",
     path: "/location",
     icon: null,
     cName: "nav-text",

@@ -31,7 +31,7 @@ const Navbar = () => {
             <>
               <NavbarLink to="#">
                 <FaIcons.FaBars
-                  onClick={showSidebar}
+                  onClick={() => showSidebar()}
                   style={{ color: "#000" }}
                 />
               </NavbarLink>
@@ -46,7 +46,7 @@ const Navbar = () => {
               </NavbarLink>
               <NavbarLink to="#">
                 <FaIcons.FaBars
-                  onClick={showSidebar}
+                  onClick={() => showSidebar()}
                   style={{ color: "#000" }}
                 />
               </NavbarLink>
@@ -54,7 +54,7 @@ const Navbar = () => {
           )}
         </NavbarContainer>
         <NavbarMenu sidebar={sidebar} leftNavbar={leftNavbar}>
-          <NavbarMenuItems onClick={showSidebar}>
+          <NavbarMenuItems onClick={() => showSidebar()}>
             <NavbarToggle leftNavbar={leftNavbar}>
               <NavbarLink to="#">
                 <AiIcons.AiOutlineClose style={{ color: "#000" }} />

@@ -5,8 +5,9 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { PageStateProvider } from "./context/PageStateProvider.js";
 import Home from "./pages/Home";
 import Product from "./pages/Products";
-import Report from "./pages/Report";
 import About from "./pages/About";
+import Location from "./pages/Location";
+import ContentContainer from "./service/ContentContainer";
 
 function App() {
   return (
@@ -14,12 +15,14 @@ function App() {
       <PageStateProvider>
         <Router>
           <Navbar />
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/our-story" element={<About />} />
-            <Route path="/menu" element={<Product />} />
-            <Route path="/location" element={<Report />} />
-          </Routes>
+          <ContentContainer>
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/our-story" element={<About />} />
+              <Route path="/menu" element={<Product />} />
+              <Route path="/location" element={<Location />} />
+            </Routes>
+          </ContentContainer>
         </Router>
       </PageStateProvider>
     </>

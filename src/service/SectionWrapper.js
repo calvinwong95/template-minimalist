@@ -1,12 +1,14 @@
-import React from "react";
+import React, { useContext } from "react";
+import { PageStateContext } from "../context/PageStateProvider";
 
-const SectionWrapper = ({ children, navbarHeight, ...style }) => {
+const SectionWrapper = ({ children, sx }) => {
+  const { navbarHeight } = useContext(PageStateContext);
   return (
     <div
       style={{
         width: "100%",
         height: `calc(100vh - ${navbarHeight}px)`,
-        ...style,
+        ...sx,
       }}
     >
       {children}

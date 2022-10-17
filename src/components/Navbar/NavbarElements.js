@@ -35,11 +35,11 @@ export const NavbarMenu = styled.nav`
   ${({ leftNavbar, sidebar }) =>
     leftNavbar
       ? sidebar
-        ? { left: "-100%" }
-        : { left: "0%" }
+        ? { left: "0%" }
+        : { left: "-100%" }
       : sidebar
-      ? { right: "-100%" }
-      : { right: "0%" }};
+      ? { right: "0%" }
+      : { right: "-100%" }};
 
   transition: ${({ sidebar }) => (sidebar ? "500ms" : "500ms")};
 

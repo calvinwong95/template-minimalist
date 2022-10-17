@@ -1,7 +1,7 @@
 import React, { useRef, useState, useEffect, createRef } from "react";
 import PageScroller from "../components/PageScroller";
 
-const ContentWrapper = ({ children, showDots = true }) => {
+const ScrollWrapper = ({ children, showDots = true }) => {
   const [active, setActive] = useState(0);
   const contentArray = React.Children.toArray(children);
   const refArray = Array.from({ length: contentArray.length }, () =>
@@ -50,4 +50,4 @@ const ContentWrapper = ({ children, showDots = true }) => {
   );
 };
 
-export default ContentWrapper;
+export default ScrollWrapper;

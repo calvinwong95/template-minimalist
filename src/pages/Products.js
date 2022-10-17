@@ -1,15 +1,19 @@
-import React, { useRef, useState, useEffect, createRef } from "react";
-import PageScroller from "../components/PageScroller";
+import React from "react";
+import ProductFour from "../components/ProductsContent/ProductFour";
+
 import ProductOne from "../components/ProductsContent/ProductOne";
-import ContentWrapper from "../service/ContentWrapper";
+import ProductThree from "../components/ProductsContent/ProductThree";
+import ProductTwo from "../components/ProductsContent/ProductTwo";
+import ScrollWrapper from "../service/ContentWrapper";
 
 const Product = () => {
   return (
-    <div className="content">
-      <ContentWrapper>
-        <ProductOne />
-      </ContentWrapper>
-    </div>
+    <ScrollWrapper>
+      <ProductOne />
+      <ProductTwo />
+      <ProductThree />
+      <ProductFour />
+    </ScrollWrapper>
   );
 };
 

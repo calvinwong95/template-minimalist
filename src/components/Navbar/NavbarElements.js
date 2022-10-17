@@ -4,10 +4,12 @@ import { Link } from "react-router-dom";
 export const NavbarContainer = styled.div`
   background-color: #fff;
   height: ${({ navbarHeight }) => `${navbarHeight}px`};
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   z-index: 999;
+  position: sticky;
 `;
 
 export const NavbarLink = styled(Link)`

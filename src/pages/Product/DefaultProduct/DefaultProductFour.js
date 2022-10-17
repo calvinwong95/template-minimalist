@@ -1,50 +1,8 @@
 import React from "react";
-import SectionWrapper from "../../service/SectionWrapper";
-import drinks from "../../asset/drinks.jpg";
+import SectionWrapper from "../../../service/SectionWrapper";
+import dessert from "../../../asset/dessert.jpg";
 import { motion } from "framer-motion";
-const ProductThree = () => {
-  const listArray = [
-    {
-      name: "Sweet and Sour Mojito",
-      price: 20,
-      description: "Mint, Lime, Honey, Rum, Sprite",
-    },
-    {
-      name: "Sweet and Sour Mojito",
-      price: 20,
-      description: "Mint, Lime, Honey, Rum, Sprite",
-    },
-    {
-      name: "Sweet and Sour Mojito",
-      price: 20,
-      description: "Mint, Lime, Honey, Rum, Sprite",
-    },
-    {
-      name: "Sweet and Sour Mojito",
-      price: 20,
-      description: "Mint, Lime, Honey, Rum, Sprite",
-    },
-    {
-      name: "Sweet and Sour Mojito",
-      price: 20,
-      description: "Mint, Lime, Honey, Rum, Sprite",
-    },
-    {
-      name: "Sweet and Sour Mojito",
-      price: 20,
-      description: "Mint, Lime, Honey, Rum, Sprite",
-    },
-    {
-      name: "Sweet and Sour Mojito",
-      price: 20,
-      description: "Mint, Lime, Honey, Rum, Sprite",
-    },
-    {
-      name: "Sweet and Sour Mojito",
-      price: 20,
-      description: "Mint, Lime, Honey, Rum, Sprite",
-    },
-  ];
+const ProductFour = ({ listArray }) => {
   return (
     <SectionWrapper sx={{ padding: "20px" }}>
       <div
@@ -70,7 +28,7 @@ const ProductThree = () => {
           }}
         >
           <img
-            src={drinks}
+            src={dessert}
             alt=""
             width="400px"
             height="400px"
@@ -94,7 +52,7 @@ const ProductThree = () => {
               marginBottom: "40px",
             }}
           >
-            drinks
+            appetizer
           </h1>
           {listArray.map((food) => {
             return (
@@ -123,4 +81,4 @@ const ProductThree = () => {
   );
 };
 
-export default ProductThree;
+export default ProductFour;

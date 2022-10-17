@@ -1,50 +1,8 @@
 import React from "react";
-import SectionWrapper from "../../service/SectionWrapper";
-import appetizer from "../../asset/appetizer.jpg";
+import SectionWrapper from "../../../service/SectionWrapper";
+import drinks from "../../../asset/drinks.jpg";
 import { motion } from "framer-motion";
-const ProductOne = () => {
-  const listArray = [
-    {
-      name: "Sausage Platter",
-      price: 20,
-      description: "Cajun Sausages with avocado dip",
-    },
-    {
-      name: "Sausage Platter",
-      price: 20,
-      description: "Cajun Sausages with avocado dip",
-    },
-    {
-      name: "Sausage Platter",
-      price: 20,
-      description: "Cajun Sausages with avocado dip",
-    },
-    {
-      name: "Sausage Platter",
-      price: 20,
-      description: "Cajun Sausages with avocado dip",
-    },
-    {
-      name: "Sausage Platter",
-      price: 20,
-      description: "Cajun Sausages with avocado dip",
-    },
-    {
-      name: "Sausage Platter",
-      price: 20,
-      description: "Cajun Sausages with avocado dip",
-    },
-    {
-      name: "Sausage Platter",
-      price: 20,
-      description: "Cajun Sausages with avocado dip",
-    },
-    {
-      name: "Sausage Platter",
-      price: 20,
-      description: "Cajun Sausages with avocado dip",
-    },
-  ];
+const DefaultProductThree = ({ listArray }) => {
   return (
     <SectionWrapper sx={{ padding: "20px" }}>
       <div
@@ -70,11 +28,11 @@ const ProductOne = () => {
           }}
         >
           <img
-            src={appetizer}
+            src={drinks}
             alt=""
             width="400px"
             height="400px"
-            style={{ objectFit: "cover" }}
+            style={{ objectFit: "cover", backgroundColor: "pink" }}
           />
         </motion.div>
         <div
@@ -94,7 +52,7 @@ const ProductOne = () => {
               marginBottom: "40px",
             }}
           >
-            appetizer
+            drinks
           </h1>
           {listArray.map((food) => {
             return (
@@ -123,4 +81,4 @@ const ProductOne = () => {
   );
 };
 
-export default ProductOne;
+export default DefaultProductThree;

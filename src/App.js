@@ -4,7 +4,7 @@ import Navbar from "./components/Navbar/Navbar";
 import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import { PageStateProvider } from "./context/PageStateProvider.js";
 
-import Product from "./pages/Products";
+import Product from "./pages/Product";
 import About from "./pages/About";
 import Location from "./pages/Location";
 import ContentContainer from "./service/ContentContainer";

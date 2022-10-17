@@ -1,40 +1,17 @@
 import React from "react";
-import SectionWrapper from "../../service/SectionWrapper";
-import dessert from "../../asset/dessert.jpg";
+import dessert from "../../../asset/dessert.jpg";
 import { motion } from "framer-motion";
-const ProductFour = () => {
-  const listArray = [
-    {
-      name: "Panna Cotta",
-      price: 20,
-      description: "Coconut, Milk, Cream, Passion Fruit",
-    },
-    {
-      name: "Panna Cotta",
-      price: 20,
-      description: "Coconut, Milk, Cream, Passion Fruit",
-    },
-    {
-      name: "Panna Cotta",
-      price: 20,
-      description: "Coconut, Milk, Cream, Passion Fruit",
-    },
-    {
-      name: "Panna Cotta",
-      price: 20,
-      description: "Coconut, Milk, Cream, Passion Fruit",
-    },
-  ];
+import MobileWrapper from "../../../service/MobileWrapper";
+const MobileProductFour = ({ listArray }) => {
   return (
-    <SectionWrapper sx={{ padding: "20px" }}>
+    <MobileWrapper sx={{ padding: "20px" }}>
       <div
         style={{
-          height: "100%",
           width: "100%",
           display: "flex",
-          flexDirection: "row",
+          flexDirection: "column",
           alignItems: "center",
-          columnGap: "20px",
+          rowGap: "40px",
         }}
       >
         <motion.div
@@ -42,8 +19,8 @@ const ProductFour = () => {
           animate={{ opacity: 1 }}
           transition={{ duration: 0.3 }}
           style={{
-            width: "50%",
-            height: "100%",
+            width: "100%",
+
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
@@ -52,14 +29,14 @@ const ProductFour = () => {
           <img
             src={dessert}
             alt=""
-            width="400px"
-            height="400px"
-            style={{ objectFit: "cover", backgroundColor: "pink" }}
+            width="250px"
+            height="250px"
+            style={{ objectFit: "cover" }}
           />
         </motion.div>
         <div
           style={{
-            width: "50%",
+            width: "100%",
             height: "100%",
             display: "flex",
             flexDirection: "column",
@@ -71,10 +48,11 @@ const ProductFour = () => {
             style={{
               textTransform: "uppercase",
               textDecoration: "underline",
-              marginBottom: "40px",
+              marginBottom: "20px",
+              fontSize: "calc(2 * (1.5vh + 1.1vw))",
             }}
           >
-            appetizer
+            desserts
           </h1>
           {listArray.map((food) => {
             return (
@@ -88,10 +66,21 @@ const ProductFour = () => {
                   justifyContent: "center",
                 }}
               >
-                <h3 style={{ textTransform: "uppercase" }}>
+                <h3
+                  style={{
+                    textTransform: "uppercase",
+                    fontSize: "calc(1.5 * (1.5vh + 1.1vw))",
+                  }}
+                >
                   {food.name} - {food.price}
                 </h3>
-                <h4 style={{ textTransform: "uppercase", fontStyle: "italic" }}>
+                <h4
+                  style={{
+                    textTransform: "uppercase",
+                    fontStyle: "italic",
+                    fontSize: "calc(1* (1.5vh + 1.1vw))",
+                  }}
+                >
                   {food.description}
                 </h4>
               </div>
@@ -99,8 +88,8 @@ const ProductFour = () => {
           })}
         </div>
       </div>
-    </SectionWrapper>
+    </MobileWrapper>
   );
 };
 
-export default ProductFour;
+export default MobileProductFour;

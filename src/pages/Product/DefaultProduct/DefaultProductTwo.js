@@ -1,50 +1,8 @@
 import React from "react";
-import SectionWrapper from "../../service/SectionWrapper";
-import mains from "../../asset/mains.jpg";
+import SectionWrapper from "../../../service/SectionWrapper";
+import mains from "../../../asset/mains.jpg";
 import { motion } from "framer-motion";
-const ProductTwo = () => {
-  const listArray = [
-    {
-      name: "Steak Tartare",
-      price: 40,
-      description: "Raw beef, capers, mustard, honey, salt and pepper",
-    },
-    {
-      name: "Steak Tartare",
-      price: 40,
-      description: "Raw beef, capers, mustard, honey, salt and pepper",
-    },
-    {
-      name: "Steak Tartare",
-      price: 40,
-      description: "Raw beef, capers, mustard, honey, salt and pepper",
-    },
-    {
-      name: "Steak Tartare",
-      price: 40,
-      description: "Raw beef, capers, mustard, honey, salt and pepper",
-    },
-    {
-      name: "Steak Tartare",
-      price: 40,
-      description: "Raw beef, capers, mustard, honey, salt and pepper",
-    },
-    {
-      name: "Steak Tartare",
-      price: 40,
-      description: "Raw beef, capers, mustard, honey, salt and pepper",
-    },
-    {
-      name: "Steak Tartare",
-      price: 40,
-      description: "Raw beef, capers, mustard, honey, salt and pepper",
-    },
-    {
-      name: "Steak Tartare",
-      price: 40,
-      description: "Raw beef, capers, mustard, honey, salt and pepper",
-    },
-  ];
+const DefaultProductTwo = ({ listArray }) => {
   return (
     <SectionWrapper sx={{ padding: "20px" }}>
       <div
@@ -123,4 +81,4 @@ const ProductTwo = () => {
   );
 };
 
-export default ProductTwo;
+export default DefaultProductTwo;

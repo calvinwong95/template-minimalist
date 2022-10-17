@@ -7,6 +7,7 @@ export const NavbarContainer = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  z-index: 999;
 `;
 
 export const NavbarLink = styled(Link)`
@@ -30,7 +31,7 @@ export const NavbarMenu = styled.nav`
   display: flex;
   justify-content: center;
   position: fixed;
-  z-index: 3;
+  z-index: 4;
   top: 0;
   ${({ leftNavbar, sidebar }) =>
     leftNavbar
@@ -50,6 +51,7 @@ export const NavbarMenu = styled.nav`
 
 export const NavbarMenuItems = styled.ul`
   width: 100%;
+  z-index: 999;
 `;
 
 export const NavbarToggle = styled.li`

@@ -1,9 +1,9 @@
 import React, { forwardRef, useContext } from "react";
-import { PageStateContext } from "../../context/PageStateProvider";
-import SectionWrapper from "../../service/SectionWrapper";
-import video from "../../asset/videoCooking.mp4";
+import SectionWrapper from "../../../service/SectionWrapper";
 
-const ContentOne = () => {
+import video from "../../../asset/videoCooking.mp4";
+
+const DefaultHomeOne = () => {
   return (
     <SectionWrapper>
       <div
@@ -87,4 +87,4 @@ const ContentOne = () => {
   );
 };
 
-export default forwardRef(ContentOne);
+export default DefaultHomeOne;

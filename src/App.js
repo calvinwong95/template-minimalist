@@ -3,11 +3,12 @@ import React from "react";
 import Navbar from "./components/Navbar/Navbar";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { PageStateProvider } from "./context/PageStateProvider.js";
-import Home from "./pages/Home";
+
 import Product from "./pages/Products";
 import About from "./pages/About";
 import Location from "./pages/Location";
 import ContentContainer from "./service/ContentContainer";
+import Home from "./pages/Home";
 
 function App() {
   return (

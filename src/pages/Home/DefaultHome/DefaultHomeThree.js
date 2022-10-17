@@ -1,8 +1,8 @@
 import React from "react";
-import SectionWrapper from "../../service/SectionWrapper";
-import contentThree from "../../asset/contentThree.jpg";
+import SectionWrapper from "../../../service/SectionWrapper";
+import contentThree from "../../../asset/contentThree.jpg";
 
-const ContentThree = () => {
+const DefaultHomeThree = () => {
   return (
     <SectionWrapper>
       <div
@@ -108,4 +108,4 @@ const ContentThree = () => {
   );
 };
 
-export default ContentThree;
+export default DefaultHomeThree;

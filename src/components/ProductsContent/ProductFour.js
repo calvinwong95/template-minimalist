@@ -1,6 +1,7 @@
 import React from "react";
 import SectionWrapper from "../../service/SectionWrapper";
 import dessert from "../../asset/dessert.jpg";
+import { motion } from "framer-motion";
 const ProductFour = () => {
   const listArray = [
     {
@@ -36,7 +37,10 @@ const ProductFour = () => {
           columnGap: "20px",
         }}
       >
-        <div
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.3 }}
           style={{
             width: "50%",
             height: "100%",
@@ -52,7 +56,7 @@ const ProductFour = () => {
             height="400px"
             style={{ objectFit: "cover", backgroundColor: "pink" }}
           />
-        </div>
+        </motion.div>
         <div
           style={{
             width: "50%",

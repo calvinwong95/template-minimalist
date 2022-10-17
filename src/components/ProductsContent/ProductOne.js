@@ -1,6 +1,7 @@
 import React from "react";
 import SectionWrapper from "../../service/SectionWrapper";
 import appetizer from "../../asset/appetizer.jpg";
+import { motion } from "framer-motion";
 const ProductOne = () => {
   const listArray = [
     {
@@ -56,7 +57,10 @@ const ProductOne = () => {
           columnGap: "20px",
         }}
       >
-        <div
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.3 }}
           style={{
             width: "50%",
             height: "100%",
@@ -72,7 +76,7 @@ const ProductOne = () => {
             height="400px"
             style={{ objectFit: "cover" }}
           />
-        </div>
+        </motion.div>
         <div
           style={{
             width: "50%",

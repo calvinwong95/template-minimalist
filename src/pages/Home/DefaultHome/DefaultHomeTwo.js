@@ -1,8 +1,8 @@
 import React from "react";
-import SectionWrapper from "../../service/SectionWrapper";
-import contentTwo from "../../asset/contentTwo.jpg";
+import SectionWrapper from "../../../service/SectionWrapper";
+import contentTwo from "../../../asset/contentTwo.jpg";
 
-const ContentTwo = () => {
+const DefaultHomeTwo = () => {
   return (
     <SectionWrapper>
       <div
@@ -98,4 +98,4 @@ const ContentTwo = () => {
   );
 };
 
-export default ContentTwo;
+export default DefaultHomeTwo;

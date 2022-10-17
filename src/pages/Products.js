@@ -4,7 +4,7 @@ import ProductFour from "../components/ProductsContent/ProductFour";
 import ProductOne from "../components/ProductsContent/ProductOne";
 import ProductThree from "../components/ProductsContent/ProductThree";
 import ProductTwo from "../components/ProductsContent/ProductTwo";
-import ScrollWrapper from "../service/ContentWrapper";
+import ScrollWrapper from "../service/ScrollWrapper";
 
 const Product = () => {
   return (

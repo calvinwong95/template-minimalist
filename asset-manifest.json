@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/template-minimalist/static/css/main.8efa385e.css",
+    "main.js": "/template-minimalist/static/js/main.fa2b1922.js",
+    "static/media/videoCooking.mp4": "/template-minimalist/static/media/videoCooking.ef0037428add884e7c79.mp4",
+    "static/media/restaurantOne.jpg": "/template-minimalist/static/media/restaurantOne.47b2ef95d5940f3080e0.jpg",
+    "static/media/restaurantOutside.jpg": "/template-minimalist/static/media/restaurantOutside.5956c0f3a2f74b8c90a4.jpg",
+    "static/media/appetizer.jpg": "/template-minimalist/static/media/appetizer.2952a08689bf28f6fe5e.jpg",
+    "static/media/contentThree.jpg": "/template-minimalist/static/media/contentThree.e07d6f0420d6b0bfc1ae.jpg",
+    "static/media/drinks.jpg": "/template-minimalist/static/media/drinks.65397f51f6418345e392.jpg",
+    "static/media/mains.jpg": "/template-minimalist/static/media/mains.ad2dbe2a1bbb3ce59b4d.jpg",
+    "static/media/dessert.jpg": "/template-minimalist/static/media/dessert.ae33283ceeb7b8e7f18f.jpg",
+    "static/media/contentTwo.jpg": "/template-minimalist/static/media/contentTwo.ac86d1b7e77781a6abdc.jpg",
+    "index.html": "/template-minimalist/index.html",
+    "main.8efa385e.css.map": "/template-minimalist/static/css/main.8efa385e.css.map",
+    "main.fa2b1922.js.map": "/template-minimalist/static/js/main.fa2b1922.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8efa385e.css",
+    "static/js/main.fa2b1922.js"
+  ]
+}

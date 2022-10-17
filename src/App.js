@@ -1,7 +1,7 @@
 import "./App.css";
 import React from "react";
 import Navbar from "./components/Navbar/Navbar";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import { PageStateProvider } from "./context/PageStateProvider.js";
 
 import Product from "./pages/Products";

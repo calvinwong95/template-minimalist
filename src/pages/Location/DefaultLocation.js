@@ -73,14 +73,20 @@ const DefaultLocation = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.3 }}
-        style={{ width: "50%", height: "100%" }}
+        style={{
+          width: "50%",
+          height: "100%",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+        }}
       >
         <img
           src={restaurantOutside}
           alt=""
-          width="100%"
-          height="100%"
-          style={{ objectFit: "contain" }}
+          width="500px"
+          height="500px"
+          style={{ objectFit: "cover", borderRadius: 5 }}
         />
       </motion.div>
     </div>

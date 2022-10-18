@@ -51,6 +51,7 @@ const MobileProductOne = ({ listArray }) => {
               textDecoration: "underline",
               marginBottom: "20px",
               fontSize: "calc(2 * (1.5vh + 1.1vw))",
+              textAlign: "center",
             }}
           >
             appetizer
@@ -80,6 +81,7 @@ const MobileProductOne = ({ listArray }) => {
                     textTransform: "uppercase",
                     fontStyle: "italic",
                     fontSize: "calc(1* (1.5vh + 1.1vw))",
+                    textAlign: "center",
                   }}
                 >
                   {food.description}

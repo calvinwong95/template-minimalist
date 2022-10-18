@@ -70,6 +70,7 @@ const MobileProductFour = ({ listArray }) => {
                   style={{
                     textTransform: "uppercase",
                     fontSize: "calc(1.5 * (1.5vh + 1.1vw))",
+                    textAlign: "center",
                   }}
                 >
                   {food.name} - {food.price}
@@ -79,6 +80,7 @@ const MobileProductFour = ({ listArray }) => {
                     textTransform: "uppercase",
                     fontStyle: "italic",
                     fontSize: "calc(1* (1.5vh + 1.1vw))",
+                    textAlign: "center",
                   }}
                 >
                   {food.description}

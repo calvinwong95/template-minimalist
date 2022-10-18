@@ -1,8 +1,15 @@
 import React from "react";
 import SectionWrapper from "../../../service/SectionWrapper";
 import contentTwo from "../../../asset/contentTwo.jpg";
+import Button from "../../../components/Button";
+import { useNavigate } from "react-router-dom";
 
 const DefaultHomeTwo = () => {
+  const navigate = useNavigate();
+
+  const navigateTo = () => {
+    navigate("/menu");
+  };
   return (
     <SectionWrapper>
       <div
@@ -91,6 +98,7 @@ const DefaultHomeTwo = () => {
                 1 there is a bit of true Mexican culture and flavor.
               </h3>
             </div>
+            <Button onClick={navigateTo} sx={{ marginTop: "50px" }}></Button>
           </div>
         </div>
       </div>
